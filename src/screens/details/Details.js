@@ -19,6 +19,10 @@ function starHandler(e){
 
 
 function Details() {
+
+  
+
+
   const location = useLocation();
   const data = location.state.movie;
   console.log(data);
