@@ -1,8 +1,8 @@
 import React from 'react';
 import YouTube from 'react-youtube';
 
-class Trailer extends React.Component {
-  render() {
+function Trailer (props) {
+
     const opts = {
       height: '390',
       width: '100%',
@@ -11,13 +11,13 @@ class Trailer extends React.Component {
         autoplay: 1,
       },
     };
-    console.log(this.props.id)
-    return <YouTube videoId={this.props.id} opts={opts} onReady={this._onReady} />;
+    console.log(props.id)
+    return <YouTube videoId={props.id} opts={opts} onReady={_onReady} />;
   }
 
-  _onReady(event) {
+   function _onReady(event) {
     // access to player in all event handlers via event.target
     event.target.pauseVideo();
   }
-}
+
 export default Trailer;
