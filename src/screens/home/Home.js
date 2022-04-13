@@ -61,7 +61,7 @@ function Home() {
 
     return (
       <div>
-        <Header  btnType="hiddenbtn"/>
+        {/* <Header  btnType="hiddenbtn"/> */}
         <span className="heading">Upcoming Movies</span>
         <SingleLineImageList moviesData={homeState.data} />
 

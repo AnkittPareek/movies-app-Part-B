@@ -28,7 +28,7 @@ function Details() {
   console.log(data);
   return (
     <>
-      <Header btnType="bookshowbtn" buttonName="BOOK SHOW"/>
+      {/* <Header btnType="bookshowbtn" buttonName="BOOK SHOW"/> */}
       <div className="backbtn">
         <Link to="/">
           <Typography>{"<"} Back to Home</Typography>

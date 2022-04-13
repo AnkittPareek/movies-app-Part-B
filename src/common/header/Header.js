@@ -26,7 +26,7 @@ function Header(props) {
   var validateuname="";
   var validatepword="";  
 
-  const [islogin, setislogin] = React.useState(false);
+  const [islogin, setislogin] = React.useState();
 
   const [username, setusername] = React.useState("");
   const [password, setpassword] = React.useState("");
