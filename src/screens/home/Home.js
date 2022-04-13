@@ -61,7 +61,7 @@ function Home() {
 
     return (
       <div>
-        <Header btnType="loginbtn" variant="contained" buttonName="LOGIN" btnType2="hiddenbtn" buttonName2="hidden" btnType3="logoutbtn" buttonName3="LOGOUT"/>
+        <Header  btnType="hiddenbtn"/>
         <span className="heading">Upcoming Movies</span>
         <SingleLineImageList moviesData={homeState.data} />
 
